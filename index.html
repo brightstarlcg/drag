@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="test">拖拽拖拽</div>
+<script src="drag.js"></script>
+<script>
+    drag({
+        el: '#test',
+        style: 'background:#CCC',
+        cursor: true,
+        frontier: true
+    });
+    console.log(document.querySelector('#test'))
+</script>
+</body>
+</html>
